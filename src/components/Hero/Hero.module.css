@@ -49,9 +49,11 @@
 }
 
 .title {
-  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  font-size: clamp(2rem, 8vw, 4.4rem);
   line-height: 1.05;
   margin-bottom: 1.25rem;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .shimmer {
@@ -72,8 +74,9 @@
 .lede {
   color: var(--muted);
   font-size: 1.05rem;
-  max-width: 540px;
+  max-width: min(540px, 100%);
   margin-bottom: 2rem;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 900px) {

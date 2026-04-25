@@ -15,11 +15,13 @@ export function Avatar({ initials, card }: AvatarProps): React.JSX.Element {
       ref={ref}
       className={`${styles.wrap} reveal slide-right ${visible ? 'visible' : ''}`}
     >
-      <div className={styles.ripple} />
-      <div className={`${styles.ripple} ${styles.r2}`} />
-      <div className={`${styles.ripple} ${styles.r3}`} />
-      <div className={styles.avatar} data-cursor-target>
-        {initials}
+      <div className={styles.avatarBlock}>
+        <div className={styles.ripple} />
+        <div className={`${styles.ripple} ${styles.r2}`} />
+        <div className={`${styles.ripple} ${styles.r3}`} />
+        <div className={styles.avatar} data-cursor-target>
+          {initials}
+        </div>
       </div>
       <div className={styles.cardWrap}>
         <div className={styles.card} data-cursor-target>
