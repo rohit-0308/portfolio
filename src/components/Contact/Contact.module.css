@@ -1,0 +1,78 @@
+.contact {
+  text-align: center;
+  position: relative;
+}
+
+.rippleWrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 2.5rem;
+}
+
+.orb {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--grad);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a0e1a;
+  font-size: 1.8rem;
+  font-weight: 700;
+  z-index: 2;
+  box-shadow: 0 0 40px rgba(124, 92, 255, 0.6);
+}
+
+.ripple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid rgba(124, 92, 255, 0.7);
+  transform: translate(-50%, -50%);
+  animation: contactRipple 2.6s ease-out infinite;
+}
+
+.r2 {
+  animation-delay: 0.9s;
+  border-color: rgba(34, 211, 238, 0.7);
+}
+
+.r3 {
+  animation-delay: 1.8s;
+  border-color: rgba(244, 114, 182, 0.7);
+}
+
+@keyframes contactRipple {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.2);
+    opacity: 0;
+  }
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.links :global(.btn) {
+  min-width: 200px;
+  justify-content: center;
+}
+
+.subCentered {
+  margin-left: auto;
+  margin-right: auto;
+}

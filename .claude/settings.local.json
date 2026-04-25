@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm --version)",
+      "Bash(bun --version)",
+      "Bash(rm -f src/App.css src/index.css src/assets/react.svg src/assets/vite.svg src/assets/hero.png public/favicon.svg public/icons.svg)",
+      "Bash(rmdir src/assets public)"
+    ]
+  }
+}

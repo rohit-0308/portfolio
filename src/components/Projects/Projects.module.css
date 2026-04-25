@@ -1,0 +1,71 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.75rem;
+  overflow: hidden;
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 3px;
+  width: 100%;
+  background: var(--grad);
+  transition: left 0.65s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(124, 92, 255, 0.4);
+}
+
+.card:hover::before {
+  left: 100%;
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.stack {
+  color: var(--accent-2);
+  font-size: 0.82rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 0.94rem;
+  margin-bottom: 0.7rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.tags span {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(124, 92, 255, 0.12);
+  color: #c0b3ff;
+  border: 1px solid rgba(124, 92, 255, 0.2);
+}

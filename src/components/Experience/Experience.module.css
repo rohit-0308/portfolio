@@ -1,0 +1,77 @@
+.item {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: var(--grad);
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.head h3 {
+  font-size: 1.15rem;
+}
+
+.when {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.role {
+  color: var(--accent-2);
+  font-size: 0.92rem;
+  margin-bottom: 1rem;
+}
+
+.sub {
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem;
+  color: var(--text);
+}
+
+.sub small {
+  color: var(--muted);
+  font-weight: 400;
+  margin-left: 0.4rem;
+}
+
+.list {
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.list li {
+  margin-bottom: 0.45rem;
+  font-size: 0.94rem;
+}
+
+.list li strong {
+  color: var(--text);
+}
+
+.list li code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.88em;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  color: var(--text);
+}
