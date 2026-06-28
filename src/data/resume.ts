@@ -43,7 +43,7 @@ export const resume: Resume = {
     heading: 'Engineer focused on performance, accessibility, and design systems.',
     sub: 'I architect frontends that hold up under enterprise scale — virtualized grids of millions of rows, micro-frontend monorepos, and fully WCAG-compliant UIs.',
     paragraphs: [
-      "I'm a Senior Frontend Engineer at Clearwater Analytics with 3.5+ years building React/TypeScript applications used by 1,000+ enterprise users. I specialize in turning sluggish UIs into snappy ones — measured in cold-start seconds, Lighthouse points, and CI/CD minutes.",
+      "I'm a Senior Frontend Engineer at Clearwater Analytics with 4+ years building React/TypeScript applications used by 1,000+ enterprise users. I specialize in turning sluggish UIs into snappy ones — measured in cold-start seconds, Lighthouse points, and CI/CD minutes.",
       "My recent work spans an AI/GPT-powered chat product and an enterprise reconciliation platform with a 50+ component design system. I care equally about the architecture you can't see (Nx monorepo boundaries, Webpack chunking, render paths) and the polish you can (accessibility, keyboard nav, cross-browser parity).",
       'Currently exploring React Server Components, GraphQL, and WebSockets in side projects — and always shipping in Agile/Scrum sprints.',
     ],
